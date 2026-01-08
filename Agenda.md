@@ -30,7 +30,6 @@
 - Course Overview
 - GitHub Account Setup
 - Software Setup
-- Workbook Setup
 - [JavaScript Review (Intro)](https://dmit-2008.github.io/dmit2008/classes/week-1/day-2)
   - [ ] Variables and block scoping
   - [ ] Functions
@@ -38,7 +37,6 @@
   - [ ] DOM API
   - [ ] Arrays and Loops
 - Homework:
-  - [Practice Version Control](https://dgilleland.github.io/CPSC-1520/tutorials/0011/)
   - Read [Exploring ES6, chapters 1-3](https://exploringjs.com/es6/)
 
 
@@ -46,8 +44,10 @@
 
 See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/lessons/w02-d1/) on my Ad-Hoc site.
 
+- Workbook Setup
 - [x] First JavaScript Demo + Node Project Setup
 - **Homework**
+  - [Practice Version Control](https://dgilleland.github.io/CPSC-1520/tutorials/0011/)
   - [ ] Complete any unfinished parts of the first JavaScript Demo
   - [ ] Read the instructions for the *Astronauts* demo and set up the Node project for that starter kit.
 
