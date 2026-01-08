@@ -22,9 +22,9 @@
 
 ----
 
-## Sep-Dec 2025 Schedule
+## Jan-Apr 2026 Schedule
 
-### Sep 02
+### Jan 8
 
 - Introductions
 - Course Overview
@@ -42,7 +42,7 @@
   - Read [Exploring ES6, chapters 1-3](https://exploringjs.com/es6/)
 
 
-### Sep 08
+### Jan 14
 
 See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/lessons/w02-d1/) on my Ad-Hoc site.
 
@@ -51,7 +51,7 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
   - [ ] Complete any unfinished parts of the first JavaScript Demo
   - [ ] Read the instructions for the *Astronauts* demo and set up the Node project for that starter kit.
 
-### Sep 09
+### Jan 15
 
 - [ ] Continue JavaScript Review with the [Astronaut](./src/A/review-astronauts-example-START/README.md) demo
 - [ ] Get the Starter Kit for the Weather App in-class demo; this is an *ad-hoc* starter kit that you can quickly grab using `pnpm`.
@@ -61,7 +61,7 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
     ```
 
 
-
+<!-- 
 ### Sep 15
 
 - **Today**
@@ -215,7 +215,7 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
 ### Nov 25
 
 - **Today**
-  - Complete [Part K](https://github.com/DG-InClass/DMIT-2008-A01-Sep-2025/blob/main/src/K/authentication-example-START/README.md#9-lets-protect-our-dashboard-page-this-should-only-available-to-users-that-are-authenticated-so-we-want-to-reroute-our-unauthenticated-users-lets-do-this-with-our-useauth-hook) <!-- ewww -->
+  - Complete [Part K](https://github.com/DG-InClass/DMIT-2008-A01-Sep-2025/blob/main/src/K/authentication-example-START/README.md#9-lets-protect-our-dashboard-page-this-should-only-available-to-users-that-are-authenticated-so-we-want-to-reroute-our-unauthenticated-users-lets-do-this-with-our-useauth-hook) <!-- ewww -- >
   - General Review
   - About *Assignment **5***
 
@@ -232,7 +232,7 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
     ```ps
     pnpm dlx tiged --disable-cache --force DG-InClass/DMIT-2008-A01-Sep-2025/sk/J/testing-revisited ./src/J/testing-revisited
     ```
- -->
+ -- >
 
 ### Dec 08
 
@@ -244,4 +244,4 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
 
 
 ### Dec 16
-
+ -->
