@@ -44,8 +44,10 @@
 
 See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/lessons/w02-d1/) on my Ad-Hoc site.
 
-- Workbook Setup
-- [x] First JavaScript Demo + Node Project Setup
+- **Today**
+  - VS Code **Profiles**
+  - Workbook Setup
+  - [x] First JavaScript Demo + Node Project Setup
 - **Homework**
   - [Practice Version Control](https://dgilleland.github.io/CPSC-1520/tutorials/0011/)
   - [ ] Complete any unfinished parts of the first JavaScript Demo
