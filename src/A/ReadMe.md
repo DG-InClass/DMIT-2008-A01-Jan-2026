@@ -4,6 +4,10 @@ The following starter kits are for in-class and/or practice work in DMIT-2008. T
 
 ## JavaScript Language Review
 
+Do not use Live Server. Run a **Real** development server.
+
+![](./img/do-not-use-live-server.png)
+
 You will need to run terminal commands in the correct location. To quickly open the terminal in a demo of your workbook, right-click on the folder and choose "Open in integrated terminal".
 
 ![](./img/open-terminal.png)
