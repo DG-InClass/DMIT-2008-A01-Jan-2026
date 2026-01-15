@@ -47,7 +47,6 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
 - **Today**
   - VS Code **Profiles**
   - Workbook Setup
-  - [x] First JavaScript Demo + Node Project Setup
 - **Homework**
   - [Practice Version Control](https://dgilleland.github.io/CPSC-1520/tutorials/0011/)
   - [ ] Complete any unfinished parts of the first JavaScript Demo
@@ -55,12 +54,19 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
 
 ### Jan 15
 
-- [ ] Continue JavaScript Review with the [Astronaut](./src/A/review-astronauts-example-START/README.md) demo
-- [ ] Get the Starter Kit for the Weather App in-class demo; this is an *ad-hoc* starter kit that you can quickly grab using `pnpm`.
+- **Today**
+  - [ ] First JavaScript Demo + Node Project Setup
+  - [ ] Continue JavaScript Review with the [Astronaut](./src/A/review-astronauts-example-START/README.md) demo
+  - [ ] Get the Starter Kit for the Weather App in-class demo; this is an *ad-hoc* starter kit that you can quickly grab using `pnpm`.
 
-    ```ps
-    pnpm dlx tiged --disable-cache --force DG-InClass/DMIT-2008-A01-Sep-2025/sk/A/weather-app-start ./src/A/weather-app
-    ```
+      ```ps
+      pnpm dlx tiged --disable-cache --force DG-InClass/DMIT-2008-A01-Sep-2025/sk/A/weather-app-start ./src/A/weather-app
+      ```
+
+- **Homework**
+  - [ ] Complete any unfinished parts of the first JavaScript Demo
+  - [ ] Read the instructions for the *Astronauts* demo and set up the Node project for that starter kit.
+
 
 
 <!-- 
