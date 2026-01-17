@@ -19,7 +19,7 @@ This draft planning calendar shows the dates for all **evaluation items**. For a
 | Week 8 &vert; Part **E/F** |   Mar 1 - 7    |                                                                  |
 |  Week 9 &vert; Part **G**  |   Mar 8 - 14   | **Mar 13 - Practical 4A Due** &vert; *Mar 13 - Practical 4B Out* |
 | Week 10 &vert; Part **G**  |  Mar 15 - 21   |                                                                  |
-| Week 11 &vert; Part **H**  |  Mar 22 - 28   | **Mar 27 - Practical 4B Due** &vert; *Mar 28 - Theory 2 Out*     |
+| Week 11 &vert; Part **H**  |  Mar 22 - 28   | **Mar 27 - Practical 4B Due** &vert; *Mar 27 - Theory 2 Out*     |
 | Week 12 &vert; Part **I**  | Mar 29 - Apr 4 |                                                                  |
 | Week 13 &vert; Part **J**  |   Apr 5 - 11   | *Apr 10 - Practical 5 Out* &vert; **Apr 10 - Theory 2 Due**      |
 | Week 14 &vert; Part **K**  |  Apr 12 - 18   |                                                                  |
