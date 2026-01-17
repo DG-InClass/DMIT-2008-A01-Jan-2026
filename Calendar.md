@@ -11,7 +11,7 @@ This draft planning calendar shows the dates for all **evaluation items**. For a
 |  Week 1 &vert; Part **A**  |   Jan 8 - 10   |                                                                  |
 |  Week 2 &vert; Part **A**  |  Jan 11 - 17   | *Jan 16 - Practical 1 Out*                                       |
 |  Week 3 &vert; Part **B**  |  Jan 18 - 24   | *Jan 23 - Theory 1 Available*                                    |
-| Week 4 &vert; Part **B/C** |  Jan 25 - 31   | *Jan 23 - Practical 2 Out* &vert; **Jan 23 - Practical 1 Due**   |
+| Week 4 &vert; Part **B/C** |  Jan 25 - 31   | *Jan 23 - Practical 2 Out* &vert; **Jan 30 - Practical 1 Due**   |
 | Week 5 &vert; Part **C/D** |   Feb 1 - 7    | **Feb 6 - Theory 1 Cut-off**                                     |
 |  Week 6 &vert; Part **D**  |   Feb 8 - 14   | *Feb 13 - Practical 3 Out* &vert;  **Feb 13 - Practical 2 Due**  |
 |           BREAK            |  Feb 15 - 21   |                                                                  |
