@@ -79,7 +79,7 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
   - [ ] Get the Starter Kit for the Weather App in-class demo; this is an *ad-hoc* starter kit that you can quickly grab using `pnpm`.
 
       ```ps
-      pnpm dlx tiged --disable-cache --force DG-InClass/DMIT-2008-A02-Jan-2026/sk/A/weather-app-start ./src/A/weather-app
+      pnpm dlx tiged --disable-cache --force DG-InClass/DMIT-2008-A01-Jan-2026/sk/A/weather-app-start ./src/A/weather-app
       ```
 
 ### Jan 22
