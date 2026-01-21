@@ -1,6 +1,6 @@
 # Agenda (A01)
 
-> These are my notes on what I plan to teach in each [**upcoming class**](#jan-8). Also check out the [**Draft Planning Calendar**](./Calendar.md)
+> These are my notes on what I plan to teach in each [**upcoming class**](#jan-21). Also check out the [**Draft Planning Calendar**](./Calendar.md)
 >
 > ###### *... Warn those who are idle ..., encourage the disheartened, help the weak, be patient with everyone.*
 >
@@ -66,6 +66,28 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
 - **Homework**
   - [ ] Complete any unfinished parts of the first JavaScript Demo
   - [ ] Read the instructions for the *Astronauts* demo and set up the Node project for that starter kit.
+
+### Jan 21
+
+
+- ***Check-In***
+  - [ ] Did you work on the [Astronaut](./src/A/review-astronauts-example-START/README.md) demo?
+  - [ ] QnA
+- **Today**
+  - [ ] Ad-Hoc JavaScript QuickStart to explore 
+  - [ ] Sign up for the [Open Weather API](https://home.openweathermap.org/users/sign_up)
+  - [ ] Get the Starter Kit for the Weather App in-class demo; this is an *ad-hoc* starter kit that you can quickly grab using `pnpm`.
+
+      ```ps
+      pnpm dlx tiged --disable-cache --force DG-InClass/DMIT-2008-A02-Jan-2026/sk/A/weather-app-start ./src/A/weather-app
+      ```
+
+### Jan 22
+
+- **Today**
+  - [ ] Resume Weather App
+  - [ ] Begin Topic B
+
 
 
 
