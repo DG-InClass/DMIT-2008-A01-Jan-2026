@@ -16,12 +16,30 @@ const fetchData = ({url, callback}) => {
 
 const handleResponse = (response) => response.json();
 
+/**
+ * Gets the current weather.
+ * 
+ * @param {Object} options - Options for the API call.
+ * @param {string} options.city - The city name.
+ * @param {string} options.country - The country code.
+ * @param {Function} options.callback - Called with the Weather data.
+ * @return {void}
+ */
 export const getCurrentWeather = function({city, country, callback}) {
     const WEATHER = BASE_API_URL + 'weather/';
     const url = queryString({endpoint:WEATHER, city, country});
     fetchData({url, callback});
 }
 
+/**
+ * Gets the 5-day forecast in 3-hour intervals.
+ * 
+ * @param {Object} options - Options for the API call.
+ * @param {string} options.city - The city name.
+ * @param {string} options.country - The country code.
+ * @param {Function} options.callback - Called with the Weather data.
+ * @return {void}
+ */
 export const getForecast = function({city, country, callback}) {
     const FORECAST = BASE_API_URL + 'forecast/';
     const url = queryString({endpoint:FORECAST, city, country});
