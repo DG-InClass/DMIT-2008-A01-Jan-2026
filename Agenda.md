@@ -1,6 +1,6 @@
 # Agenda (A01)
 
-> These are my notes on what I plan to teach in each [**upcoming class**](#jan-21). Also check out the [**Draft Planning Calendar**](./Calendar.md)
+> These are my notes on what I plan to teach in each [**upcoming class**](#jan-28). Also check out the [**Draft Planning Calendar**](./Calendar.md)
 >
 > ###### *... Warn those who are idle ..., encourage the disheartened, help the weak, be patient with everyone.*
 >
@@ -88,6 +88,21 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
   - [ ] Resume Weather App
   - [ ] Begin Topic B
 
+
+### Jan 28
+
+- **Today**
+  - [ ] Begin Topic B
+    - [NextJS Intro](./src/B/nextjs-intro-START/README.md)
+    - [NextJS Components Intro](./src/B/nextjs-components-intro-START/README.md)
+    - [NextJS Component Lists](./src/B/nextjs-component-lists-START/README.md)
+
+
+### Jan 29
+
+- **Today**
+    - [Bootstrap Component Library](./src/B/nextjs-bootstrap-component-library-START/README.md)
+    - [MUI Component Library](./src/B/nextjs-mui-component-library-START/README.md)
 
 
 
