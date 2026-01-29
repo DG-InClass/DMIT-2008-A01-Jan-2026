@@ -1,5 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
+import Button from 'react-bootstrap/Button';
+import ComponentLibrariesList from "../components/ComponentLibrariesList";
 import { Geist, Geist_Mono } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 
@@ -36,6 +38,13 @@ export default function Home() {
           />
           <div className={styles.intro}>
             <h1>To get started, edit the index.js file.</h1>
+            <Button as="a" variant="primary">
+              Button as link
+            </Button>
+            <Button as="a" variant="success">
+              Button as link
+            </Button>
+            <ComponentLibrariesList />
             <p>
               Looking for a starting point or more instructions? Head over to{" "}
               <a
