@@ -103,8 +103,20 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
   - [ ] Continue Topic B
     - [NextJS Component Lists](./src/B/nextjs-component-lists-START/README.md)
     - [Bootstrap Component Library](./src/B/nextjs-bootstrap-component-library-START/README.md)
-    - [MUI Component Library](./src/B/nextjs-mui-component-library-START/README.md)
 
+
+### Feb 4
+
+- **Today**
+  - [ ] Assignment 1 Troubleshooting
+  - [ ] Complete Part B - Bootstrap and MUI
+    - [MUI Component Library](./src/B/nextjs-mui-component-library-START/README.md)
+  - [ ] Identify the [**main takeaways**](./src/B/Takeaways.md)
+  - [ ] Begin [Part C](./src/C/ReadMe.md)
+
+### Feb 5
+
+- **Today**
 
 
 <!-- 
@@ -115,19 +127,7 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
     - *Note the requirements for **incremental work** and how you might **lose 50%** of your mark for not doing it!*
   - [Props, Wrappers, and Lists (Part 2)](https://dmit-2008.github.io/dmit2008/classes/week-4/day-1)
   - [ ] Review/Attempt the other [NextJS/React Intro demos](./src/B/ReadMe.md)
-  - [ ] Identify the [**main takeaways**](./src/B/Takeaways.md)
 
-
-### Sep 23
-
-- **Today**
-  - [ ] Assignment 1 Troubleshooting
-  - [ ] Complete Part B - Bootstrap and MUI
-
-### Sep 29
-
-- **Today**
-  - [ ] Begin [Part C](./src/C/ReadMe.md)
 
 ### Sep 30
 
