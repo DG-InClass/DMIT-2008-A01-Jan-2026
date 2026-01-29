@@ -1,6 +1,6 @@
 # Agenda (A01)
 
-> These are my notes on what I plan to teach in each [**upcoming class**](#jan-28). Also check out the [**Draft Planning Calendar**](./Calendar.md)
+> These are my notes on what I plan to teach in each [**upcoming class**](#jan-29). Also check out the [**Draft Planning Calendar**](./Calendar.md)
 >
 > ###### *... Warn those who are idle ..., encourage the disheartened, help the weak, be patient with everyone.*
 >
@@ -95,32 +95,19 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
   - [ ] Begin Topic B
     - [NextJS Intro](./src/B/nextjs-intro-START/README.md)
     - [NextJS Components Intro](./src/B/nextjs-components-intro-START/README.md)
-    - [NextJS Component Lists](./src/B/nextjs-component-lists-START/README.md)
 
 
 ### Jan 29
 
 - **Today**
+  - [ ] Continue Topic B
+    - [NextJS Component Lists](./src/B/nextjs-component-lists-START/README.md)
     - [Bootstrap Component Library](./src/B/nextjs-bootstrap-component-library-START/README.md)
     - [MUI Component Library](./src/B/nextjs-mui-component-library-START/README.md)
 
 
 
 <!-- 
-### Sep 15
-
-- **Today**
-  - More [JavaScript Review](https://dmit-2008.github.io/dmit2008/classes/week-2/day-2)
-  - Work on Weather App demo
-- **Homework**
-  - *Review [complete solution for Weather App](https://dgilleland.github.io/DMIT-2008/lessons/w02-d2/) demo*
-
-### Sep 16
-
-- **Today** - Begin [Part B](./src/B/ReadMe.md)
-  - [Intro to React and NextJS](https://dmit-2008.github.io/dmit2008/classes/week-3/day-1)
-  - [Props, Wrappers, and Lists (Part 1)](https://dmit-2008.github.io/dmit2008/classes/week-3/day-2)
-
 ### Sep 22
 
 - **Today**
