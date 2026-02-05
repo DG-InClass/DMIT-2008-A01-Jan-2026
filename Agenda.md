@@ -124,6 +124,7 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
       - Design doesn't need to be *pixel-perfect*, but it does need to be close to what you see in the screenshots.
     - Bonus marks will *NOT* raise your mark over 100%.
     - You can loose up to 50% of your mark if your commit history is insufficient or unbalanced. I expect a *realistic* commit history showing your progression through the lab.
+    - Unit tests are NOT being looked at. I am doing manual review of all your code.
   - [ ] Begin [Part D](./src/D/ReadMe.md)
 
 
