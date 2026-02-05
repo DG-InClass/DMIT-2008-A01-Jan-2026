@@ -1,6 +1,6 @@
 # React Events and State - JSX Conditionals
 
-> *When following along, make sure to do **git commits*** (🚦) *after each step!*
+> *When following along, make sure to do **git commits*** (<span title="Commit Now">📌</span>) *after each step!*
 
 You want to show something conditionally on the page or conditionally render lists. This is a critical part of using state in the 
 
@@ -14,7 +14,7 @@ You want to show something conditionally on the page or conditionally render lis
     - You can see that we have a list on the index page with the data imported from the `utils/movies.js` file which just has highly rated movies from imdb.
     - You can see that the form 
         - you can guess here that we're going to use stateful variables to actually change what's going on in the page.
-    🚦
+    <span title="Commit Now">📌</span>
 1. The first thing we're going to do is we're going to import useState and create variables for the year and the search variables.
    - import the useState "hook" so that we can create stateful variables.
       ```jsx
@@ -27,7 +27,7 @@ You want to show something conditionally on the page or conditionally render lis
         const [year, setYear] = useState("")
       ```
    This gives us the ability like we did last time to modify the state, and next we want to update these values whenever the `TextField` change.
-    🚦
+    <span title="Commit Now">📌</span>
 1. Let's call the function `setSearch` and `setYear` on their respective text fields.
    - for the search text field add the following lines:
       ```jsx
@@ -52,7 +52,7 @@ You want to show something conditionally on the page or conditionally render lis
         value={year}
       />
       ```
-    🚦
+    <span title="Commit Now">📌</span>
 1. On the form tag we're going to listen and handle form submissions, and we're going to prevent the default action the way we've learned in the first level of js.
    - create the event handler for the form submission. We're also going to print out the stateful variables we've created.
       ```jsx
@@ -72,7 +72,7 @@ You want to show something conditionally on the page or conditionally render lis
         >
       ```
    Observe now that that if you press enter or click the "filter" button after writing some text that the variables are printed out in the console.
-    🚦
+    <span title="Commit Now">📌</span>
 1. We're going to set a filter on the list so we want to create a filtered. 
    - create a stateful variable named `movies`
       ```jsx
@@ -87,7 +87,7 @@ You want to show something conditionally on the page or conditionally render lis
       movies.map((movieData, index)=> {/* more jsx stuff */ }
       ```
    this will now use the new stateful variable of `movies` that you've created in the first step.
-    🚦
+    <span title="Commit Now">📌</span>
 1. Create a function called `filterMovies` that will use all of the variables so that it can be filtered in the correct way.
     ```jsx
       const filterMovies = () => {
@@ -126,7 +126,7 @@ You want to show something conditionally on the page or conditionally render lis
       - on the left side we have `movieData.year` which is a number (you can see this in the `utils/movies.js`)
       - on the right we have `parseInt(year.trim())`  since year is a string we need to convert it to a number
   - last we use `setMovies(filteredMovieList)` which sets the variable `movies` so that the list in our jsx is updated.
-    🚦
+    <span title="Commit Now">📌</span>
 
 1. Let's take a look at some conditionals and JSX by doing some error handling.
    - If you search for "test" you'll see that there are no results and the page just looks blank.
@@ -148,7 +148,7 @@ You want to show something conditionally on the page or conditionally render lis
    - the `&&` is the magic here, if the condition (on the left) is `true` it will display the the jsx below it. If the condition is `false` it does not show the jsx below the `movies.length === 0 &&`.
 
    Note: Test this by searching for "test" in the search bar.
-    🚦
+    <span title="Commit Now">📌</span>
 
 1. Let's change this slightly to list the number of results on the page (replace the last step with the following)
     ```jsx
@@ -175,7 +175,7 @@ You want to show something conditionally on the page or conditionally render lis
   - the `?` and the `:` is the magic here
     - if the condition (on the left) is `true` it will display the the jsx that is BEFORE the `:`.
     - if the condition (on the left) is `false` it will display the jsx that is AFTER the `:`.
-    🚦
+    <span title="Commit Now">📌</span>
 
 1. Let's do one more validation to expand on this idea, our "year" `TextField` is a text field, in later versions we could change the type to number but that's okay for now because we will check if the stateful `year` variable is a number.
    - in the component add the function 
@@ -233,6 +233,6 @@ You want to show something conditionally on the page or conditionally render lis
 
       ```
    You can see here that again we're using the jsx conditional of `&&` so that the error message will only show if `errorMessage !== ""` is `true`.
-    🚦
+    <span title="Commit Now">📌</span>
 
 Go and test the app and see all of the changes!
