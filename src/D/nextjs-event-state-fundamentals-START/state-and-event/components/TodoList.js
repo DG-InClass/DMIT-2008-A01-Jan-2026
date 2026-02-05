@@ -10,7 +10,17 @@ import {Box, Button, Grid, TextField} from '@mui/material';
 // if you want to identify specific property
 // names for the props.
 export default function TodoList(props) {
+    const onTodoTextChange = (event) => {
+        console.log(event.target.value);
+    }
+
     return <>
-        TEMPORARY TODOLIST CONTENT
+        <TextField
+            id="standard-basic"
+            label="New Todo?"
+            variant="standard"
+            sx={ {width: '100%'} }
+            onChange={onTodoTextChange}
+        />
     </>
 }
