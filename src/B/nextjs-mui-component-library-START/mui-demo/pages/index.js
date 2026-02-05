@@ -13,7 +13,8 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-import { Avatar, Box, Container, Typography } from '@mui/material';
+import { Box, Container, Typography } from '@mui/material'; // index.js that is re-exporting all the individual components
+import Avatar from '@mui/material/Avatar'; // export default function Avatar(props) {...}
 export default function Home() {
   return (
     <>
