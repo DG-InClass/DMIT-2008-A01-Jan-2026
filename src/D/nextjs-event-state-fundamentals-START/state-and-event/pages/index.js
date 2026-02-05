@@ -13,6 +13,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+import Container from '@mui/material/Container';
 export default function Home() {
   return (
     <>
@@ -26,6 +27,9 @@ export default function Home() {
         className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}
       >
         <main className={styles.main}>
+          <Container maxWidth="sm">
+            <i>TEMPORARY</i>
+          </Container>
         </main>
       </div>
     </>
