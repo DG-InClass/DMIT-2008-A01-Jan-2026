@@ -1,6 +1,6 @@
 # React Events and State Fundamentals - Todo List
 
-> *When following along, make sure to do **git commits*** (🚦) *after each step!*
+> *When following along, make sure to do **git commits*** (<span title="Commit Now">📌</span>) *after each step!*
 
 # Why?
 
@@ -15,7 +15,7 @@ State is what makes React so powerful, it's a great way of keeping in sync what 
     `cd state-events-fundamental-example`
     Run the project
     `npm run dev`
-    🚦
+    <span title="Commit Now">📌</span>
 1. Stop your project (ctrl+c) and install MUI
   - install the package
     `npm install @mui/material @emotion/react @emotion/styled`
@@ -26,11 +26,11 @@ State is what makes React so powerful, it's a great way of keeping in sync what 
           href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
         />
     ```
-    🚦
+    <span title="Commit Now">📌</span>
 1. On your index page
    - Remove everything in the main element.
    - add a container ([docs here](https://mui.com/material-ui/react-container/))
-    🚦
+    <span title="Commit Now">📌</span>
 
 1. Create a TodoList component in a newly created components folder.
    - We're going to use the following MUI components to build or TodoList app.
@@ -38,7 +38,7 @@ State is what makes React so powerful, it's a great way of keeping in sync what 
      - [Button](https://mui.com/material-ui/react-button/#basic-button)
      - [Grid](https://mui.com/material-ui/react-grid/)
      - [TextField](https://mui.com/material-ui/react-text-field/)
-    🚦
+    <span title="Commit Now">📌</span>
 1. Let's use an event to listen to changes with the "onChange" react event
    - in your `TodoList` component add a function that will take an "event" as a parameter. Note this "event" you can think of as the same as your event object from vanilla js, except with a bit more in it. Here's what the function looks like.
       ```jsx
@@ -58,7 +58,7 @@ State is what makes React so powerful, it's a great way of keeping in sync what 
       />
       ```
    - Observe that when you write in the text field input the event is fired and a console message is printed
-    🚦
+    <span title="Commit Now">📌</span>
 1. Let's add an event on the button that listens to onClick events.
    - first create a function in our `TodoList` component
       ```jsx
@@ -104,20 +104,20 @@ State is what makes React so powerful, it's a great way of keeping in sync what 
         />
       ```
    Note: use `setTodoText` when you want to change the variable `todoText` (this is in the `onTodoTextChange` function), as well 
-    🚦
+    <span title="Commit Now">📌</span>
 1. Let's see the difference on the page. Under the button add the following code to see our state changing.
     ```jsx
       <Grid item xs={12}>
         Current input text: {todoText}
       </Grid>
     ```
-    🚦
+    <span title="Commit Now">📌</span>
 1. Let's add one more stateful variable called `allTodos` we're going to use `setAllTodos` as the setter function (it's always going to be ) like below:
     ```jsx
     const [allTodos, setAllTodos] = useState([])
     ```
     Note: You can see here that the original value of allTodos is an empty list.
-    🚦
+    <span title="Commit Now">📌</span>
 1. In the `onAddTodoClick` function we're going to do a few things. We're going to add the `todoText`, to the list of `allTodos` and we're going to reset the `todoText`. Change the `onAddTodoClick` with the following code:
     ```jsx
       const onAddTodoClick = () => {
@@ -131,7 +131,7 @@ State is what makes React so powerful, it's a great way of keeping in sync what 
         setTodoText("")
       }
     ```
-    🚦
+    <span title="Commit Now">📌</span>
 1. Display the list right under our our current input so that we can see the differnces of the list (replay the exising value.)
     ```jsx
       <Grid item xs={12}>
@@ -139,7 +139,7 @@ State is what makes React so powerful, it's a great way of keeping in sync what 
         Current TodoList: {allTodos.toString()}
       </Grid>
     ```
-    🚦
+    <span title="Commit Now">📌</span>
 1. Let's use [MUI lists](https://mui.com/material-ui/react-list/#basic-list) to render the the list of todos. This is going to use the following components: List, ListItem, ListItemText.
     - We're going to use our knowledge of JSX and how to render lists.
         ```jsx
@@ -156,7 +156,7 @@ State is what makes React so powerful, it's a great way of keeping in sync what 
           </List>
         ```
     Notes: you can see that we loop through the todos using map. You can also see above that the parameters of map are "todoItem" and "index", the todoItem is the item in the list, and the index is only used for the keys.
-    🚦
+    <span title="Commit Now">📌</span>
 1. Removed the following lines and see what the app looks like now!
     ```jsx
       <Grid item xs={12}>
