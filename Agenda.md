@@ -1,6 +1,6 @@
 # Agenda (A01)
 
-> These are my notes on what I plan to teach in each [**upcoming class**](#feb-4). Also check out the [**Draft Planning Calendar**](./Calendar.md)
+> These are my notes on what I plan to teach in each [**upcoming class**](#feb-5). Also check out the [**Draft Planning Calendar**](./Calendar.md)
 >
 > ###### *... Warn those who are idle ..., encourage the disheartened, help the weak, be patient with everyone.*
 >
@@ -117,6 +117,13 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
 ### Feb 5
 
 - **Today**
+  - [ ] Discuss Practical 2 Assigment
+    - Already has a `package.json` and a `package-lock.json`, implying that you should use `npm` for further dependency installs.
+    - This requires you to read the official documentation on MUI components used in this assignment.
+      - Avoid copy/paste! Type in the code you need.
+    - Bonus marks will *NOT* raise your mark over 100%.
+    - You can loose up to 50% of your mark if your commit history is insufficient or unbalanced. I expect a *realistic* commit history showing your progression through the lab.
+  - [ ] Begin [Part D](./src/D/ReadMe.md)
 
 
 <!-- 
@@ -135,7 +142,6 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
 
 ### Oct 06
 
-- **Today** - Begin [Part D](./src/D/ReadMe.md)
 
 
 ### Oct 07
