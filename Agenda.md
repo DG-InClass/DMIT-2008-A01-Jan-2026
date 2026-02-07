@@ -127,6 +127,11 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
     - Unit tests are NOT being looked at. I am doing manual review of all your code.
   - [ ] Begin [Part D](./src/D/ReadMe.md)
 
+### Feb 11
+
+- **Today**
+  - Continue Step 7 in [D - Event/State Fundamentals](./src/D/nextjs-event-state-fundamentals-START/README.md)
+
 
 <!-- 
 ### Sep 22
