@@ -1,5 +1,5 @@
 // ~/components/TodoList.js
-import {Box, Button, Grid, TextField} from '@mui/material';
+import {Box, Button, Grid, TextField, List, ListItem, ListItemText, Typography} from '@mui/material';
 // React's useState hook allows us to manage
 // the internal state/data of our component
 // in a way that the React framework can also
@@ -24,6 +24,7 @@ export default function TodoList(props) {
     //     \______/  \_________/             \/
     //      getter   setter func              |
     //                       initial value   -|
+    const [allTodos, setAllTodos] = useState([]);
 
     const onTodoTextChange = (event) => {
         console.log(event.target.value);
@@ -31,6 +32,11 @@ export default function TodoList(props) {
     }
     const onAddTodoClick = () => {
         console.log('Clicked the button');
+        // create a new array with all the todos and the new todo item
+        const updatedTodoList = [...allTodos, todoText];
+        //  to prepend the data [todoText, ...allTodos]
+        setAllTodos(updatedTodoList); // replaces the old array of data
+        setTodoText(''); // reset the <TextField>
     }
 
     return <>
@@ -47,7 +53,19 @@ export default function TodoList(props) {
             onClick={onAddTodoClick}
         >Add Todo</Button>
         <Grid item xs={12}>
-            Current input text: {todoText}
+            <List sx={{width: '100%'}}>
+                {
+                    allTodos.map((eachItem, index) =>
+                        <ListItem key={index}>
+                            <ListItemText>
+                                <Typography variant="p" component="div">
+                                    {eachItem}
+                                </Typography>
+                            </ListItemText> 
+                        </ListItem>
+                    )
+                }
+            </List>
         </Grid>
     </>
 }
