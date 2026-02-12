@@ -15,7 +15,48 @@ import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 
+import { useState } from 'react';
+
 export default function Home() {
+  const [filterText, setFilterText] = useState('');
+  const [filterYear, setFilterYear] = useState('');
+  // For our data (movies list), we will want to initialize
+  // our state to all of the movies
+  const [filteredMovieList, setFilteredMovieList] = useState(MOVIE_LIST);
+
+  const handleSubmit = (evt) => {
+    evt.preventDefault();
+    console.log('Text to filter:', filterText);
+    console.log('Year to match:', filterYear);
+    filterMovies();
+  }
+
+  const filterMovies = () => {
+    // The result of filtering should produce a new array of data
+    // that we can use to replace the filteredMovieList state
+    let updatedMovieList = [...MOVIE_LIST]; // copy of the original
+
+    // Now for the actual filtering...
+    if(filterText.trim() !== '') {
+      // look for matching names
+      updatedMovieList = updatedMovieList.filter((movieData) => {
+        // the .filter expects a "predicate" (fancy name for a
+        // function that returns true/false)
+        return movieData.name.toLowerCase().includes(filterText.toLowerCase().trim());
+      });
+    }
+
+    if(filterYear.trim() !== '') {
+      // looking for matching year
+      // Create a stand-alone "predicate" function to compare year
+      const matchesYear = (data) => data.year === parseInt(filterYear.trim());
+      updatedMovieList = updatedMovieList.filter(matchesYear);
+    }
+
+    // Update the state
+    setFilteredMovieList(updatedMovieList);
+  }
+
   return (
     <div>
       <Head>
@@ -33,7 +74,7 @@ export default function Home() {
           <Typography variant="h2" component="h2" style={{textAlign: "center"}}>
             Movies
           </Typography>
-          <form style={{width: '100%'}}>
+          <form style={{width: '100%'}} onSubmit={handleSubmit}>
             <Grid container spacing={2}>
               <Grid item xs={6}>
                 <TextField
@@ -41,7 +82,8 @@ export default function Home() {
                   label="search..."
                   variant="standard"
                   sx={{width: '100%'}}
-                  
+                  value={filterText}
+                  onChange={(e) => { setFilterText(e.target.value); }}
                 />
               </Grid>
               <Grid item xs={4}>
@@ -50,7 +92,8 @@ export default function Home() {
                   label="year"
                   variant="standard"
                   sx={{width: '100%'}}
-                 
+                  value={filterYear}
+                  onChange={(e) => {setFilterYear(e.target.value); }}
                 />
               </Grid>
               <Grid item xs={2}>
@@ -65,7 +108,7 @@ export default function Home() {
             </Grid>
           </form>
           <List sx={{width: `100%`}}>
-          { MOVIE_LIST.map((movieData, index)=> {
+          { filteredMovieList.map((movieData, index)=> {
               return <ListItem key={index}>
                 <ListItemText>
                   <Typography variant="p" component="div">
