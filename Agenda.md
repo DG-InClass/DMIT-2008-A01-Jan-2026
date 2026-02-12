@@ -133,7 +133,7 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
   - Continue Step 7 in [D - Event/State Fundamentals](./src/D/nextjs-event-state-fundamentals-START/README.md)
 
 
-### Feb 11
+### Feb 12
 
 - **Today**
   - Complete Topic D - [JSX Conditionals](./src/D/nextjs-event-state-jsx-conditionals-START/README.md)
