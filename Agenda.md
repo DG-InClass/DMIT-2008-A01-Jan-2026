@@ -1,6 +1,6 @@
 # Agenda (A01)
 
-> These are my notes on what I plan to teach in each [**upcoming class**](#feb-5). Also check out the [**Draft Planning Calendar**](./Calendar.md)
+> These are my notes on what I plan to teach in each [**upcoming class**](#feb-12). Also check out the [**Draft Planning Calendar**](./Calendar.md)
 >
 > ###### *... Warn those who are idle ..., encourage the disheartened, help the weak, be patient with everyone.*
 >
@@ -132,6 +132,11 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
 - **Today**
   - Continue Step 7 in [D - Event/State Fundamentals](./src/D/nextjs-event-state-fundamentals-START/README.md)
 
+
+### Feb 11
+
+- **Today**
+  - Complete Topic D - [JSX Conditionals](./src/D/nextjs-event-state-jsx-conditionals-START/README.md)
 
 <!-- 
 ### Sep 22
