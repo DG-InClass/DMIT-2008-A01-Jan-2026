@@ -23,11 +23,26 @@ export default function Home() {
   // For our data (movies list), we will want to initialize
   // our state to all of the movies
   const [filteredMovieList, setFilteredMovieList] = useState(MOVIE_LIST);
+  // Manage our error messages with React state as well
+  const [errorMessage, setErrorMessage] = useState('');
+
+  const validateInputs = () => {
+    // The only really thing that needs validating is the year
+    const yearNum = parseInt(filterYear.trim()); // good number, or NaN
+    if(filterYear.trim() !== '' && 
+      (isNaN(yearNum) || yearNum < 1850 || yearNum > new Date().getFullYear()) ) {
+        // Bad year input 🥺
+        setErrorMessage(`${filterYear} is not a valid year`);
+    } else {
+      setErrorMessage(''); // clear the error mesage
+    }
+  }
 
   const handleSubmit = (evt) => {
     evt.preventDefault();
     console.log('Text to filter:', filterText);
     console.log('Year to match:', filterYear);
+    validateInputs();
     filterMovies();
   }
 
@@ -104,11 +119,25 @@ export default function Home() {
               </Grid>
               <Grid item xs={10}>
                 {/* Add the error message here*/}
+                {
+                  errorMessage !== '' &&
+                  <Alert severity='error'>{errorMessage}</Alert>
+                }
               </Grid>
             </Grid>
           </form>
           <List sx={{width: `100%`}}>
-          { filteredMovieList.map((movieData, index)=> {
+          { 
+            filteredMovieList.length === 0 ?
+              <ListItem>
+                <ListItemText>
+                  <Typography variant="p" component="div">
+                    No results - please search again.
+                  </Typography>
+                </ListItemText>
+              </ListItem>
+            :
+            filteredMovieList.map((movieData, index)=> {
               return <ListItem key={index}>
                 <ListItemText>
                   <Typography variant="p" component="div">
