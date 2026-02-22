@@ -137,6 +137,185 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
 
 - **Today**
   - Complete Topic D - [JSX Conditionals](./src/D/nextjs-event-state-jsx-conditionals-START/README.md)
+  - [ ] Identify the [**main takeaways**](./src/D/Takeaways.md)
+
+
+### Feb 25
+
+- **Today**
+- **Today** - Begin [Part E](./src/E/ReadMe.md)
+  - 15 Minutes: [API Calls](./src/E/react-rest-fundamentals-START/README.md)
+    - **Use something other than Quotes!** - ~~https://www.apicountries.com ⭐ The Repo!!~~
+    - [Countries and States](https://dgilleland.github.io/CPSC-1520/api/countries/states.json)
+    - [Countries and Cities](https://dgilleland.github.io/CPSC-1520/api/countries/cities.json)
+  - 10 Minutes: **What is REST?**
+    - 📺 [REST APIs Explained in 30 secs](https://youtube.com/shorts/hQUjpbb75eY?si=HQ_pLE1seM5Ry34a) (**0:30**)
+    - 📺 [What is a Rest API? (in 2 Minutes)](https://youtu.be/WRsKs-K6iII?si=KmY0EUARM7WsNVsx) (**2:10**)
+    - 📺 [What Is REST API? Examples And How To Use It: Crash Course System Design](https://youtu.be/-mN3VyJuCjM?si=mSE4UNsvRJ9p_xTO) (**5:20**)
+  - 90 Minutes: [REST Calls on an API](./src/E/react-rest-reviews-app-START/README.md)
+  - [ ] Identify the [**main takeaways**](./src/E/Takeaways.md)
+- **Homework**
+  - [ ] Try the refactoring of the [Rest Review Day 2](./src/E/react-rest-reviews-app-START/README-DAY-2.md) on your own
+  - [ ] Begin ***Assignment 3*** - States, Events and Templating
+- **Homework**
+
+
+
+### Feb 26
+
+- **Today**
+  - *... more REST*
+- **Homework**
+
+
+
+### Mar 4
+
+- **Today**
+  - [Part F](./src/F/ReadMe.md) - **Deploying to Vercel**
+    - Try the [Deploy-React-App](https://github.com/dgilleland/Deploy-React-App) as a starter kit.
+    - We'll need to **adapt the instructions** so that you use your **personal GitHub account** for this demo
+    - 🚨 **NEVER** publish marked assignments outside of the provided *GitHub Classroom assignment repos*. This includes *after you finish this course*.
+- **Homework**
+  - Try deploying another website of yours to Vercel.
+
+
+
+### Mar 5
+
+- **Today**
+  - [Part G](./src/G/ReadMe.md) - **React Components and LifeCycle**
+  - Continue [Part G](./src/G/ReadMe.md) - **React Components and LifeCycle**
+- **Homework**
+  - Install the [React Dev Tools](https://react.dev/learn/react-developer-tools) for your browser.
+
+
+
+### Mar 11
+
+- **Today**
+  - [Part H](./src/H/ReadMe.md) - **NextJS Routing and Pages**
+    - [Takeaways](./src/H/Takeaways.md)
+- **Homework**
+
+
+
+### Mar 12
+
+- **Today**
+  - [Part I](./src/I/ReadMe.md) - **SSR**
+    - [Astronauts](./src/I/nextjs-12-space-page-ssr-START/README.md)
+    - [Takeaways](./src/I/Takeaways.md)
+- **Homework**
+
+
+
+### Mar 18
+
+- **Today**
+  - Continue [Part I](./src/I/ReadMe.md) - **SSR**
+    - [SSR Calls to the Backend](./src/I/nextjs-12-reviews-app-ssr-START/README.md)
+    - Follow along on [**Week 10, Day 1**](http://dgilleland.github.io/DMIT-2008/lessons/w10-d1/)
+  - *Assignment 4A* - QnA
+  - **Bonus Time:** Listen to me Lecture about Automated Testing... 😃
+- **Homework**
+
+
+
+### Mar 19
+
+- **Today**
+  - Testing - the start of a multi-day journey....
+  - Begin [Part J](./src/J/ReadMe.md)
+  - Review notes on [**Week 10, Day 2**](https://dgilleland.github.io/DMIT-2008/lessons/w12-d1/)
+- **Homework**
+
+
+
+### Mar 25
+
+- **Today**
+  - Testing (cont.)
+  - Continue [Part J](./src/J/ReadMe.md)
+    - *Watch for 🐞 - Snag hit in outdated demo*
+- **Homework**
+
+
+
+### Mar 26
+
+- **Today**
+  - Begin [Part K](./src/K/ReadMe.md)
+    - `useContext()` and Application State
+    - This has a [**backend**](./src/K/rest-reviews-with-context-toast-START/reviews-mock-backend) and a [**front-end**](./src/K/rest-reviews-with-context-toast-START/reviews-rest-app)
+    - We will follow the [**instructions**](./src/K/rest-reviews-with-context-toast-START/README.md) and see where they lead....
+- **Homework**
+
+
+
+### Apr 1
+
+- **Today**
+  - Continue [Part K](./src/K/ReadMe.md)
+    - Authentication
+      - Video (6:22): [Why OAuth is Breaking Your App - Fix These 10 Mistakes](https://youtu.be/WrA1XVtaU0g?si=lsGyTqYhl9vmoSfb)
+    - This also has a [*backend*](./src/K/authentication-example-START/authentication-mock-backend/) and a [*front-end*](./src/K/authentication-example-START/app-state-auth-example-new/)
+    - Again, we will follow the [*instructions*](./src/K/authentication-example-START/README.md) and see where we end up.
+- **Homework**
+
+
+
+### Apr 2
+
+- **Today**
+  - Complete [Part K](https://github.com/DG-InClass/DMIT-2008-A01-Sep-2025/blob/main/src/K/authentication-example-START/README.md#9-lets-protect-our-dashboard-page-this-should-only-available-to-users-that-are-authenticated-so-we-want-to-reroute-our-unauthenticated-users-lets-do-this-with-our-useauth-hook) <!-- ewww -- >
+  - General Review
+  - About *Assignment **5***
+- **Homework**
+
+
+
+### Apr 8
+
+- **Today**
+- **Homework**
+
+
+
+### Apr 9
+
+- **Today**
+- **Homework**
+
+
+
+### Apr 15
+
+- **Today**
+- **Homework**
+
+
+
+### Apr 16
+
+- **Today**
+- **Homework**
+
+
+
+### Apr 22
+
+- **Today**
+- **Homework**
+
+
+
+### Apr 23
+
+- **Today**
+- **Homework**
+
+
 
 <!-- 
 ### Sep 22
@@ -159,7 +338,6 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
 ### Oct 07
 
 - **Today** - Continue [Part D](./src/D/ReadMe.md)
-  - [ ] Identify the [**main takeaways**](./src/D/Takeaways.md)
 
 
 ### Oct 13
