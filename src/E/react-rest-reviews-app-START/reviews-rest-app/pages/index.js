@@ -23,14 +23,25 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 
 import AdapatationReviewCard from '../components/AdaptationReviewCard';
-
+import { useState } from 'react';
 
 export default function Home() {
-  const MOCK_ADAPTATION_RATING = [{
-    'title': 'Fight Club',
-    'comment': 'Great movie and book',
-    'rating': 10
-  }]
+  const [reviews, setReviews] = useState([]);
+
+  const loadAllReviews = () => {
+    console.log('loadAllReviews called');
+    fetch('http://localhost:5000/reviews')
+    //.then(handleJsonResponse)  //  function handleJsonResponse(respon)
+      .then(response => response.json()) // TODO: handle errors...
+      .then(data => {
+        console.log(data);
+        setReviews(data);
+      })
+      .catch(err => {
+        // TODO: Handle the thrown errors
+      })
+  }
+
   return (
     <div>
       <Head>
@@ -106,11 +117,12 @@ export default function Home() {
           >
             <Button
               variant="contained"
+              onClick={loadAllReviews}
             >
               Load All Current Reviews
             </Button>
           </Box>
-          {MOCK_ADAPTATION_RATING.map((adaptation, index)=> {
+          {reviews.map((adaptation, index)=> {
             return <AdapatationReviewCard
                       title={adaptation.title}
                       comment={adaptation.comment}
