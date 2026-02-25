@@ -27,6 +27,37 @@ import { useState } from 'react';
 
 export default function Home() {
   const [reviews, setReviews] = useState([]);
+  // Our form info (user input) can be stored into state
+  const [title, setTitle] = useState('');
+  const [comments, setComments] = useState('');
+  const [rating, setRating] = useState(0);
+
+  const handleSubmit = (ev) => {
+    ev.preventDefault(); // Intercept the browser's default
+    console.log('submitted form');
+    // One of the things you will find different from "regular"
+    // form submit handlers is that we will NOT be doing any
+    // .querySelector() or checking the form's .element to get
+    // the inputs.
+    // Instead, all of the input controls are directly updating
+    // the state of our component through their value={} and
+    // onChange={} props.
+    fetch('http://localhost:5000/reviews', {
+      method: "POST",
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        title: title,  // shorthand is to just say    title,
+        comment: comments,
+        rating
+      })
+    }).then((res) => res.json())
+    .then(data => {
+      // do a console.log to see how the endpoint responds to a POST
+      setReviews([data, ...reviews]); // prepend the data to my array
+    })
+  }
 
   const loadAllReviews = () => {
     console.log('loadAllReviews called');
@@ -58,7 +89,7 @@ export default function Home() {
       </AppBar>
       <main>
         <Container maxWidth="md">
-          <form>
+          <form onSubmit={handleSubmit}>
             <Grid container spacing={3}>
               <Grid item xs={12} sm={12}>
                 <TextField
@@ -67,6 +98,8 @@ export default function Home() {
                   label="Adaptation Title"
                   fullWidth
                   variant="standard"
+                  value={title}
+                  onChange={ (e) => { setTitle(e.target.value); } }
                 />
               </Grid>
               <Grid item xs={12} sm={12}>
@@ -76,6 +109,8 @@ export default function Home() {
                   label="Comments"
                   fullWidth
                   variant="standard"
+                  value={comments}
+                  onChange={ (e) => { setComments(e.target.value); } }
                 />
               </Grid>
               <Grid item xs={12} sm={12}>
@@ -85,6 +120,8 @@ export default function Home() {
                     row
                     aria-labelledby="adaptation-rating"
                     name="rating-buttons-group"
+                    value={rating}
+                    onChange={ (ev) => { setRating(ev.target.value); }}
                   >
                     <FormControlLabel value="1" control={<Radio />} label="1" />
                     <FormControlLabel value="2" control={<Radio />} label="2" />
@@ -127,7 +164,7 @@ export default function Home() {
                       title={adaptation.title}
                       comment={adaptation.comment}
                       rating={adaptation.rating}
-                      index={index}
+                      key={index}
                    />
           })}
 

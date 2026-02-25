@@ -8,7 +8,7 @@ import Typography from '@mui/material/Typography';
 
 export default function AdapatationReviewCard(props) {
     return <>
-    <Card key={props.index}>
+    <Card key={props.key}>
               <CardHeader
                 avatar={
                   <Avatar sx={{ bgcolor: 'blue' }} aria-label="recipe">
