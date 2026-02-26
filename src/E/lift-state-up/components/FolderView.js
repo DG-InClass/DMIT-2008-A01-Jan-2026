@@ -1,8 +1,7 @@
-import projectFiles from '../projectFiles.json';
-import { useState } from 'react';
 
 export default function FolderView(props) {
-    const {nodeList, setNodeList} = useState(projectFiles);
+    const nodeList = props.nodeList;
+    console.log('FolderView props:', props)
     return <>
         <RenderTree {...nodeList} />
     </>

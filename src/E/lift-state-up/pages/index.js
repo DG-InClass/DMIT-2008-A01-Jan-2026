@@ -24,9 +24,14 @@ import Typography from '@mui/material/Typography';
 
 import FolderView from '../components/FolderView';
 import Description from '../components/Description';
+import projectFiles from '../projectFiles.json';
+import { useState } from 'react';
 
 export default function Home() {
-
+  const [description, setDescription] = useState(projectFiles.description);
+  const [nodeList, setNodeList] = useState(projectFiles);
+  console.log('projectFiles:', typeof projectFiles ,projectFiles);
+  console.log('nodeList state:',nodeList); 
   return (
     <div>
       <Head>
@@ -47,9 +52,9 @@ export default function Home() {
             This starter kit is currently loading the same data file directly in the <code>&lt;Description /&gt;</code> and <code>&lt;FolderView /&gt;</code> components. Our task will be to load the data once and have it shared between the two components.
           </Typography>
           <hr />
-          <Description />
+          <Description description={description} />
           <hr />
-          <FolderView />
+          <FolderView nodeList={nodeList} setNodeList={setNodeList} />
         </Container>
       </main>
     </div>
