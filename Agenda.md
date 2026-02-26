@@ -158,7 +158,7 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
   - [ ] Try the refactoring of the [Rest Review Day 2](./src/E/react-rest-reviews-app-START/README-DAY-2.md) on your own
   - [ ] Begin ***Assignment 3*** - States, Events and Templating
 - **Homework**
-
+  - Read [Sharing State](https://dgilleland.github.io/DMIT-2008/reference/00350/)
 
 
 ### Feb 26
