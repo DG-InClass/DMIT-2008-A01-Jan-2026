@@ -32,6 +32,8 @@ export default function Home() {
   const [title, setTitle] = useState('');
   const [comments, setComments] = useState('');
   const [rating, setRating] = useState(0);
+  // Track api call errors
+  const [apiError, setApiError] = useState('');
 
   const handleSubmit = (ev) => {
     ev.preventDefault(); // Intercept the browser's default
@@ -73,7 +75,10 @@ export default function Home() {
       })
       .catch(err => {
         // TODO: Handle the thrown errors
-      })
+        // d'oh!
+        console.log(err, typeof err);
+        setApiError(err.message);
+      });
   }
 
   return (
@@ -162,6 +167,13 @@ export default function Home() {
               Load All Current Reviews
             </Button>
           </Box>
+          {
+            apiError ?
+            <Box sx={{pt: 2, pb: 2}}>
+              {apiError}
+            </Box>
+            : ''
+          }
           {reviews.map((adaptation, index)=> {
             return <AdapatationReviewCard
                       title={adaptation.title}
