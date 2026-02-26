@@ -1,9 +1,15 @@
 // ~/api-calls/review-endpoints.js
+const BASE_URL = 'http://localhost:5000/reviews';
 
 const fetchMovieReviews = () => {
-    return fetch('http://localhost:5000/review')
+    return fetch(BASE_URL)
     .then(handleJsonResponse)
     .catch(handleNetworkError)
+}
+
+// TODO: Refactor the form submission API call here
+const postMovieReview = (reviewDetails) => {
+    // TODO: Complete this....
 }
 
 /**
@@ -35,4 +41,4 @@ const handleJsonResponse = (response) => {
     return response.json();
 }
 
-export { fetchMovieReviews }
+export { fetchMovieReviews, postMovieReview }
