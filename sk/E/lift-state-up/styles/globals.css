@@ -18,3 +18,7 @@ a {
 details details, details > div {
   margin-left: 20px;
 }
+
+.active {
+  background-color: gainsboro;
+}
