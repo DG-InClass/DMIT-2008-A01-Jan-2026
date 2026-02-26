@@ -56,6 +56,10 @@ export default function Home() {
     .then(data => {
       // do a console.log to see how the endpoint responds to a POST
       setReviews([data, ...reviews]); // prepend the data to my array
+      // Clear the form inputs
+      setTitle('');
+      setComments('');
+      setRating(0);
     })
   }
 
