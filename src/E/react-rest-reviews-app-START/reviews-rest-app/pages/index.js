@@ -24,6 +24,7 @@ import Typography from '@mui/material/Typography';
 
 import AdapatationReviewCard from '../components/AdaptationReviewCard';
 import { useState } from 'react';
+import { fetchMovieReviews } from '../api-calls/review-endpoints';
 
 export default function Home() {
   const [reviews, setReviews] = useState([]);
@@ -65,9 +66,7 @@ export default function Home() {
 
   const loadAllReviews = () => {
     console.log('loadAllReviews called');
-    fetch('http://localhost:5000/reviews')
-    //.then(handleJsonResponse)  //  function handleJsonResponse(respon)
-      .then(response => response.json()) // TODO: handle errors...
+    fetchMovieReviews()
       .then(data => {
         console.log(data);
         setReviews(data);
