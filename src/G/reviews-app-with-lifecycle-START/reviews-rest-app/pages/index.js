@@ -43,6 +43,7 @@ export default function Home() {
     // A component is "mounted" once it has been added
     // into the Document Object Model (DOM/page)
     console.log('Home component is mounted');
+    loadAllReviewsButton(); // TODO: do rename of the function later
   });
 
   const handleSubmit = (event) => {
