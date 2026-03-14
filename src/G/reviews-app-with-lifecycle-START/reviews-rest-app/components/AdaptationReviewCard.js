@@ -6,8 +6,19 @@ import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
 
 import Typography from '@mui/material/Typography';
+import DeleteIcon from '@mui/icons-material/Delete';
+import IconButton from '@mui/material/IconButton';
+import { deleteReviewItem } from '../utils/api/reviews';
 
 export default function AdaptationReviewCard(props) {
+  const deleteReviewHandler = (reviewId) => {
+    console.log(`Deleting the review with id = ${reviewId}...`);
+    deleteReviewItem(reviewId).then((data) => {
+      // Make the call back to our Home component
+      props.deleteCallback(reviewId);
+    });
+  }
+
   return <Card sx={{mt: 2 }}>
     <CardHeader
       avatar={
@@ -16,6 +27,12 @@ export default function AdaptationReviewCard(props) {
         </Avatar>
       }
       
+      action={
+        <IconButton onClick={() => { deleteReviewHandler(props.id); }}>
+          <DeleteIcon />
+        </IconButton>
+      }
+
       title={
         <Typography variant="body2" color="text.secondary">
           {props.title}

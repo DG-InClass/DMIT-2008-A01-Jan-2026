@@ -43,8 +43,20 @@ export default function Home() {
     // A component is "mounted" once it has been added
     // into the Document Object Model (DOM/page)
     console.log('Home component is mounted');
-    loadAllReviewsButton(); // TODO: do rename of the function later
-  });
+    loadAllReviewsButton();
+  },[]); // 🚨 Remember to put in the Dependency List array
+  //\/          even if it is just left as an empty array
+  // |--- Read the React Docs on the proper use of this 2nd argument.
+
+  // for debugging our "reviews" only
+  useEffect(() => {
+    console.log(reviews);
+  }, [reviews]); // This effect is tied to our reviews state.
+
+  const deleteReviewItem = (aReviewId) => {
+    let allReviews = reviews.filter(review => review.id !== aReviewId);
+    setReviews(allReviews);
+  }
 
   const handleSubmit = (event) => {
     event.preventDefault()
@@ -149,16 +161,13 @@ export default function Home() {
               pb: 2,
             }}
           >
-            <Button
-              variant="contained"
-              onClick={loadAllReviewsButton}
-            >
-              Load All Current Reviews
-            </Button>
+
           </Box>
           {reviews.map((adaptation, index)=> {
             return <AdaptationReviewCard
                 key={index}
+                id={adaptation.id}
+                deleteCallback={deleteReviewItem}
                 rating={adaptation.rating}
                 title={adaptation.title}
                 comment={adaptation.comment}
