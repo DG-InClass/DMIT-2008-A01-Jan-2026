@@ -1,6 +1,6 @@
 # Agenda (A01)
 
-> These are my notes on what I plan to teach in each [**upcoming class**](#feb-26). Also check out the [**Draft Planning Calendar**](./Calendar.md)
+> These are my notes on what I plan to teach in each [**upcoming class**](#mar-11). Also check out the [**Draft Planning Calendar**](./Calendar.md)
 >
 > ###### *... Warn those who are idle ..., encourage the disheartened, help the weak, be patient with everyone.*
 >
@@ -206,8 +206,7 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
 ### Mar 12
 
 - **Today**
-  - [Part H](./src/H/ReadMe.md) - **NextJS Routing and Pages**
-    - [Takeaways](./src/H/Takeaways.md)
+  - *Work Period*
 - **Homework**
 
 
@@ -215,9 +214,8 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
 ### Mar 18
 
 - **Today**
-  - [Part I](./src/I/ReadMe.md) - **SSR**
-    - [Astronauts](./src/I/nextjs-12-space-page-ssr-START/README.md)
-    - [Takeaways](./src/I/Takeaways.md)
+  - [Part H](./src/H/ReadMe.md) - **NextJS Routing and Pages**
+    - [Takeaways](./src/H/Takeaways.md)
 - **Homework**
 
 
@@ -225,9 +223,9 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
 ### Mar 19
 
 - **Today**
-  - Continue [Part I](./src/I/ReadMe.md) - **SSR**
-    - [SSR Calls to the Backend](./src/I/nextjs-12-reviews-app-ssr-START/README.md)
-    - Follow along on [**Week 10, Day 1**](http://dgilleland.github.io/DMIT-2008/lessons/w10-d1/)
+  - [Part I](./src/I/ReadMe.md) - **SSR**
+    - [Astronauts](./src/I/nextjs-12-space-page-ssr-START/README.md)
+    - [Takeaways](./src/I/Takeaways.md)
   - *Assignment 4A* - QnA
   - **Bonus Time:** Listen to me Lecture about Automated Testing... 😃
 - **Homework**
@@ -237,6 +235,16 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
 ### Mar 25
 
 - **Today**
+  - Continue [Part I](./src/I/ReadMe.md) - **SSR**
+    - [SSR Calls to the Backend](./src/I/nextjs-12-reviews-app-ssr-START/README.md)
+    - Follow along on [**Week 10, Day 1**](http://dgilleland.github.io/DMIT-2008/lessons/w10-d1/)
+- **Homework**
+
+
+
+### Mar 26
+
+- **Today**
   - Testing - the start of a multi-day journey....
   - Begin [Part J](./src/J/ReadMe.md)
   - Review notes on [**Week 10, Day 2**](https://dgilleland.github.io/DMIT-2008/lessons/w12-d1/)
@@ -244,7 +252,7 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
 
 
 
-### Mar 26
+### Apr 1
 
 - **Today**
   - Testing (cont.)
@@ -254,7 +262,7 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
 
 
 
-### Apr 1
+### Apr 2
 
 - **Today**
   - Begin [Part K](./src/K/ReadMe.md)
@@ -264,8 +272,8 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
 - **Homework**
 
 
+### Apr 8
 
-### Apr 2
 
 - **Today**
   - Continue [Part K](./src/K/ReadMe.md)
@@ -276,20 +284,13 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
 - **Homework**
 
 
-### Apr 8
 
+### Apr 9
 
 - **Today**
   - Complete [Part K](https://github.com/DG-InClass/DMIT-2008-A01-Sep-2025/blob/main/src/K/authentication-example-START/README.md#9-lets-protect-our-dashboard-page-this-should-only-available-to-users-that-are-authenticated-so-we-want-to-reroute-our-unauthenticated-users-lets-do-this-with-our-useauth-hook) <!-- ewww -- >
   - General Review
   - About *Assignment **5***
-- **Homework**
-
-
-
-### Apr 9
-
-- **Today**
 - **Homework**
 
 
