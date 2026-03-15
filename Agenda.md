@@ -265,6 +265,14 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
 ### Apr 2
 
 - **Today**
+  - *Work Period*
+- **Homework**
+
+
+### Apr 8
+
+
+- **Today**
   - Begin [Part K](./src/K/ReadMe.md)
     - `useContext()` and Application State
     - This has a [**backend**](./src/K/rest-reviews-with-context-toast-START/reviews-mock-backend) and a [**front-end**](./src/K/rest-reviews-with-context-toast-START/reviews-rest-app)
@@ -272,8 +280,8 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
 - **Homework**
 
 
-### Apr 8
 
+### Apr 9
 
 - **Today**
   - Continue [Part K](./src/K/ReadMe.md)
@@ -285,19 +293,12 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
 
 
 
-### Apr 9
+### Apr 15
 
 - **Today**
   - Complete [Part K](https://github.com/DG-InClass/DMIT-2008-A01-Sep-2025/blob/main/src/K/authentication-example-START/README.md#9-lets-protect-our-dashboard-page-this-should-only-available-to-users-that-are-authenticated-so-we-want-to-reroute-our-unauthenticated-users-lets-do-this-with-our-useauth-hook) <!-- ewww -- >
   - General Review
   - About *Assignment **5***
-- **Homework**
-
-
-
-### Apr 15
-
-- **Today**
 - **Homework**
 
 
