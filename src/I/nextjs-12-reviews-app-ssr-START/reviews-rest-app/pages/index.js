@@ -27,17 +27,42 @@ import AdaptationReviewCard from '../components/AdaptationReviewCard'
 
 import { getReviews, postReview } from '../utils/api/reviews.js'
 
-export default function Home() {
-  const [reviews, setReviews] = useState([])
+export async function getServerSideProps(context) {
+  // All the code inside of here is run on the server only.
+  // BTW: This hints to how the "bundling" of our code also
+  // includes "code splitting". Code Splitting is where our
+  // source code gets "split" into to "places" where it runs:
+  // Client-side vs. Server-side.
+  const reviews = await getReviews();
+  return {
+    props: {
+      reviews // note how I am doing a "short-hand" version
+    //reviews: reviews
+    }
+  }
+}
+
+import { useRouter } from 'next/router';
+
+export default function Home(props) {
+  const router = useRouter();
+
+  const refreshData = () => {
+    // I want to "trigger new server-side rendering (that is,
+    // the getServerSideProps()) via the router
+    router.replace(router.asPath); // kinda like a "refresh"
+  }
+  const { reviews } = props;
+  // const [reviews, setReviews] = useState([])
   const [title, setTitle] = useState("")
   const [comments, setComments] = useState("")
   const [rating, setRating] = useState(0)
 
   // on the client side, our function will fetch
   // all of our reviews on loading of the page.
-  useEffect(()=> {
-    loadAllReviews()
-  }, [])
+  // useEffect(()=> {
+  //   loadAllReviews()
+  // }, [])
 
   // for debugging "reviews" purposes only
   useEffect(()=> {
@@ -45,10 +70,11 @@ export default function Home() {
   }, [reviews])
 
   const deleteReviewItem = (deleteReviewId) => {
-    let allReviews = reviews.filter((review)=> {
-      return review.id !== deleteReviewId
-    })
-    setReviews(allReviews)
+    refreshData(); // trigger SSR
+    // let allReviews = reviews.filter((review)=> {
+    //   return review.id !== deleteReviewId
+    // })
+    // setReviews(allReviews)
   }
 
   const handleSubmit = (event) => {
@@ -58,15 +84,16 @@ export default function Home() {
         comment: comments,
         rating
       }).then((data)=> {
-        setReviews([data, ...reviews])
+        refreshData();
+        // setReviews([data, ...reviews])
       })
   }
 
-  const loadAllReviews = () => {
-    getReviews().then((data)=> {
-      setReviews(data)
-    })
-  }
+  // const loadAllReviews = () => {
+  //   getReviews().then((data)=> {
+  //     setReviews(data)
+  //   })
+  // }
 
   return (
     <div>
