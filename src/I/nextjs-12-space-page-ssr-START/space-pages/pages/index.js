@@ -13,16 +13,30 @@ import NavBar from '@components/NavBar';
 
 import { getAgencies } from '@utils/api/agencies'
 
-export default function Home() {
-  const [agenciesData, setAgenciesData] = useState([])
+// NOTE: The name `getServerSideProps` is very specific;
+//       You must use that name if you want SSR via NextJS.
+export async function getServerSideProps(context) {
+  console.log('This message should only appear on the server, NOT in the browser.');
+  const agencies = await getAgencies();
+  return {
+    props: {
+      agenciesData: agencies.results
+    }, // will be passed to the page component as props
+  }
+}
+
+export default function Home(props) {
+  // console.log('Home props:', props);
+  const { agenciesData } = props;
+  // const [agenciesData, setAgenciesData] = useState([])
   
-  useEffect(()=> {
-    // fire this on load.
-    getAgencies().then((data)=> {
-      console.log(data)
-      setAgenciesData(data.results)
-    })
-  }, [])
+  // useEffect(()=> {
+  //   // fire this on load.
+  //   getAgencies().then((data)=> {
+  //     console.log(data)
+  //     setAgenciesData(data.results)
+  //   })
+  // }, [])
 
 
   return (
