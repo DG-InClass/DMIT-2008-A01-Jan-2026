@@ -1,6 +1,6 @@
 # Agenda (A01)
 
-> These are my notes on what I plan to teach in each [**upcoming class**](#mar-18). Also check out the [**Draft Planning Calendar**](./Calendar.md)
+> These are my notes on what I plan to teach in each [**upcoming class**](#mar-25). Also check out the [**Draft Planning Calendar**](./Calendar.md)
 >
 > ###### *... Warn those who are idle ..., encourage the disheartened, help the weak, be patient with everyone.*
 >
@@ -226,8 +226,8 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
   - [Part I](./src/I/ReadMe.md) - **SSR**
     - [Astronauts](./src/I/nextjs-12-space-page-ssr-START/README.md)
     - [Takeaways](./src/I/Takeaways.md)
-  - *Assignment 4A* - QnA
-  - **Bonus Time:** Listen to me Lecture about Automated Testing... 😃
+    - [SSR Calls to the Backend](./src/I/nextjs-12-reviews-app-ssr-START/README.md)
+    - Follow along on [**Week 10, Day 1**](http://dgilleland.github.io/DMIT-2008/lessons/w10-d1/)
 - **Homework**
 
 
@@ -235,9 +235,7 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
 ### Mar 25
 
 - **Today**
-  - Continue [Part I](./src/I/ReadMe.md) - **SSR**
-    - [SSR Calls to the Backend](./src/I/nextjs-12-reviews-app-ssr-START/README.md)
-    - Follow along on [**Week 10, Day 1**](http://dgilleland.github.io/DMIT-2008/lessons/w10-d1/)
+  - *Assignment 4A* - QnA + Lab Time
 - **Homework**
 
 
@@ -246,6 +244,7 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
 
 - **Today**
   - Testing - the start of a multi-day journey....
+  - **Bonus Time:** Listen to me Lecture about Automated Testing... 😃
   - Begin [Part J](./src/J/ReadMe.md)
   - Review notes on [**Week 10, Day 2**](https://dgilleland.github.io/DMIT-2008/lessons/w12-d1/)
 - **Homework**
