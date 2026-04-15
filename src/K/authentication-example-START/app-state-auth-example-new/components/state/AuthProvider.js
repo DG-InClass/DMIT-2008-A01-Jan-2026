@@ -1,19 +1,30 @@
 // ~/components/state/AuthProvider.js
 
-import { useState, useContext, createContext } from 'react';
+import { useState, useEffect, useContext, createContext } from 'react';
+import { router } from 'next/router';
+
 import { login } from '@/utils/api/auth'; // actual fetch calls
 
 export const AuthenticationContext = createContext({});
 
 /**
  * This custom hook supplies context for user authentication.
+ * @params { object } options
+ * @params { options.protectedPage: boolean } Defaults to false
+ * @params { options.redirectUrl: string } Defaults to the home page
  * @returns { { token: string, user: object, isAuthenticated: boolean, signIn: Function, signOut: Function }}
  */
-export const useAuth = () => {
+export const useAuth = (options = {protectedPage: false, redirectUrl: '/'}) => {
     const context = useContext(AuthenticationContext);
     if(!context) {
         throw new Error('useAuth must be used within an AuthProvider');
     }
+    const router = useRouter();
+    useEffect(() => {
+        if(!context.isAuthenticated && options.protectedPage) {
+            router.push(redirectUrl); // Navigate away from this page
+        }
+    }, [context.isAuthenticated]); // Updates when .isAuthenticated changes
     return context;
 }
 

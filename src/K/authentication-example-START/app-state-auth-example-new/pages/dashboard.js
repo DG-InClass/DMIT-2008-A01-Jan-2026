@@ -5,10 +5,13 @@ import Typography from '@mui/material/Typography'
 
 import Navbar from '@/components/Navbar'
 
+import { useAuth } from '@/components/state/AuthProvider';
+
 export default function Dashboard() {
   /* import the user reroute to home.
   This should be a protected page.
   */
+  const { isAuthenticated, user } = useAuth({ protectedPage: true, redirectUrl: '/login/' });
 
   return (
     <>
@@ -24,7 +27,7 @@ export default function Dashboard() {
           }}
         >
           <Typography component="h1" variant="h5">
-            Welcome (USERNAME HERE)!
+            Welcome {isAuthenticated && user.firstname }!
           </Typography>
           <Typography component="h2" variant="h5">
             This is your dashboard
